@@ -1,0 +1,13 @@
+[
+{
+  "modid": "betterbench",
+  "name": "dan's Better Bench",
+  "description": "Example placeholder mod.",
+  "version": "${version}",
+  "mcversion": "${mcversion}",
+  "url": "",
+  "authorList": ["dan"],
+  "credits": "Thanks to RealBench, which was the mod that this supersedes",
+  "logoFile": ""
+}
+]
