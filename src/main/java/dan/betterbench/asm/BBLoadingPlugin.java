@@ -1,17 +1,19 @@
 package dan.betterbench.asm;
 
+import net.minecraftforge.common.ForgeVersion;
 import net.minecraftforge.fml.relauncher.IFMLLoadingPlugin;
+import net.minecraftforge.fml.relauncher.IFMLLoadingPlugin.MCVersion;
+import net.minecraftforge.fml.relauncher.IFMLLoadingPlugin.Name;
 
 import java.util.Map;
 
-@IFMLLoadingPlugin.MCVersion("1.12.2")
+@Name("dBBLoadingPlugin")
+@MCVersion(ForgeVersion.mcVersion)
 public class BBLoadingPlugin implements IFMLLoadingPlugin {
 
     @Override
     public String[] getASMTransformerClass() {
-        return new String[] {
-                "dan.betterbench.asm.BBTransformer"
-        };
+        return new String[] {"dan.betterbench.asm.BBTransformer"};
     }
 
     @Override
