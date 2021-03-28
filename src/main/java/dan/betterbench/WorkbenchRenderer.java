@@ -13,6 +13,7 @@ import net.minecraft.item.ItemStack;
 import java.util.Map;
 import java.util.WeakHashMap;
 
+@SuppressWarnings("unused")
 public class WorkbenchRenderer extends TileEntitySpecialRenderer<WorkbenchTile> {
 
     Map<WorkbenchTile, RenderingState> states = new WeakHashMap<>();

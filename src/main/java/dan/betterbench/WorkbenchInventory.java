@@ -7,6 +7,7 @@ import net.minecraft.inventory.InventoryCrafting;
 import net.minecraft.item.ItemStack;
 import net.minecraft.world.WorldServer;
 
+@SuppressWarnings("unused")
 public class WorkbenchInventory extends InventoryCrafting {
 
     private ContainerWorkbench container;

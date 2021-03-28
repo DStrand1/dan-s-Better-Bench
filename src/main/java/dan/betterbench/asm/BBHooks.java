@@ -2,7 +2,6 @@ package dan.betterbench.asm;
 
 import dan.betterbench.WorkbenchRenderer;
 import dan.betterbench.WorkbenchTile;
-import net.minecraft.client.renderer.tileentity.TileEntitySpecialRenderer;
 import net.minecraft.entity.item.EntityItem;
 import net.minecraft.inventory.ContainerWorkbench;
 import net.minecraft.item.ItemStack;
@@ -16,6 +15,7 @@ import net.minecraftforge.fml.relauncher.Side;
 
 import java.util.List;
 
+@SuppressWarnings("unused")
 public class BBHooks {
 
     public static WorkbenchTile createNewTileEntity() {
