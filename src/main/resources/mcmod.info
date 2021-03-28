@@ -1,0 +1,15 @@
+[
+  {
+    "modid": "betterbench",
+    "name": "dan's Better Bench",
+    "description": "A mod that allows the Crafting Table to keep its inventory.",
+    "version": "${version}",
+    "mcversion": "${mcversion}",
+    "url": "",
+    "authorList": [
+      "dan"
+    ],
+    "credits": "Thanks to RealBench for being the mod this supersedes.",
+    "logoFile": "betterbench_logo.png"
+  }
+]
