@@ -89,20 +89,25 @@ artifacts {
 }
 
 fun getVersionFromJava(file: File): String {
-    var version = "0"
+    var major = "0"
+    var minor = "0"
+    var revision = "0"
+
     val prefix = "public static final int"
 
     file.forEachLine { line ->
         var s = line.trim()
         if (s.startsWith(prefix)) {
             s = s.substring(prefix.length, s.length - 1)
-            s = s.replace(" = \"", " ").replace("\"", " ").trim()
+            s = s.replace("=", " ").replace(" +", " ").trim()
             val pts = s.split(" ")
 
             when {
-                pts[0] == "VERSION" -> version = pts[1]
+                pts[0] == "MAJOR" -> major = pts[pts.size - 1]
+                pts[0] == "MINOR" -> minor = pts[pts.size - 1]
+                pts[0] == "REVISION" -> revision = pts[pts.size - 1]
             }
         }
     }
-    return version
+    return "$major.$minor.$revision"
 }
